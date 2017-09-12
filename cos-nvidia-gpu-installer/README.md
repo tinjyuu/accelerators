@@ -36,10 +36,10 @@ kind: Pod
 spec:
   volumes:
   -  name: nvidia-debug-tools # optional
-     hostpath:
+     hostPath:
        path: /home/kubernetes/bin/nvidia/bin
   -  name: nvidia-libraries # required
-     hostpath:
+     hostPath:
        path: /home/kubernetes/bin/nvidia/lib
   containers:
   - name: gpu-container
